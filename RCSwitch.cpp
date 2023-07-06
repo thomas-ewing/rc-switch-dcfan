@@ -86,11 +86,12 @@ static const RCSwitch::Protocol PROGMEM proto[] = {
   { 500, {  6, 14 }, {  1,  2 }, {  2,  1 }, false },    // protocol 5
   { 450, { 23,  1 }, {  1,  2 }, {  2,  1 }, true },     // protocol 6 (HT6P20B)
   { 150, {  2, 62 }, {  1,  6 }, {  6,  1 }, false },    // protocol 7 (HS2303-PT, i. e. used in AUKEY Remote)
-  { 200, {  3, 130}, {  7, 16 }, {  3,  16}, false},     // protocol 8 Conrad RS-200 RX
-  { 200, { 130, 7 }, {  16, 7 }, { 16,  3 }, true},      // protocol 9 Conrad RS-200 TX
+  { 200, {  3, 130}, {  7, 16 }, {  3,  16}, false },     // protocol 8 Conrad RS-200 RX
+  { 200, { 130, 7 }, {  16, 7 }, { 16,  3 }, true },      // protocol 9 Conrad RS-200 TX
   { 365, { 18,  1 }, {  3,  1 }, {  1,  3 }, true },     // protocol 10 (1ByOne Doorbell)
   { 270, { 36,  1 }, {  1,  2 }, {  2,  1 }, true },     // protocol 11 (HT12E)
-  { 320, { 36,  1 }, {  1,  2 }, {  2,  1 }, true }      // protocol 12 (SM5212)
+  { 320, { 36,  1 }, {  1,  2 }, {  2,  1 }, true },     // protocol 12 (SM5212)
+  { 300, { 1,  19 }, {  1,  3 }, {  3,  1 }, false }     // protocol 13 (ft1211r, fan motor)
 };
 
 enum {
